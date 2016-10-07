@@ -4,7 +4,7 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
- * Created by watts1 on 9/15/16.
+ * Interface Tweetable contains message and date.
  */
 public interface Tweetable {
     public String getMessage();

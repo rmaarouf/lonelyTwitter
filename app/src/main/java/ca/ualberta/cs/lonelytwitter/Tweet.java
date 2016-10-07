@@ -3,7 +3,9 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
- * Created by watts1 on 9/15/16.
+ * Abstract class tweet contains the tweet message and date inputted.
+ *
+ * @author Reem
  */
 public abstract class Tweet implements Tweetable{
     private String message;
@@ -28,7 +30,12 @@ public abstract class Tweet implements Tweetable{
     public abstract Boolean isImportant();
 
 
-
+    /**
+     * Message cannot be longer than 140 characters. Exception is thrown if message is longer.
+     *
+     * @param message the text that is inputted
+     * @throws TweetTooLongException
+     */
     public void setMessage(String message) throws TweetTooLongException {
         if (message.length() > 140){
             //Do Something!

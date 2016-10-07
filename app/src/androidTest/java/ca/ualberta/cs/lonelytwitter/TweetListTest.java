@@ -9,12 +9,18 @@ public class TweetListTest extends ActivityInstrumentationTestCase2
 {
 
 
+    /**
+     * Instantiates a new Tweet list test.
+     */
     public TweetListTest()
     {
         super(ca.ualberta.cs.lonelytwitter.LonelyTwitterActivity.class);
     }
 
 
+    /**
+     * Test add tweet.
+     */
     public void testAddTweet()
     {
         TweetList tweets = new TweetList();
@@ -30,6 +36,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2
         }
     }
 
+    /**
+     * Test has tweet.
+     */
     public void testHasTweet()
     {
         TweetList list = new TweetList();
@@ -38,6 +47,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2
         assertTrue(list.hasTweet(tweet));
     }
 
+    /**
+     * Test delete.
+     */
     public void testDelete()
     {
         TweetList list = new TweetList();
@@ -48,6 +60,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2
         assertFalse(list.hasTweet(tweet));
     }
 
+    /**
+     * Test get tweet.
+     */
     public void testGetTweet()
     {
         TweetList tweets = new TweetList();
@@ -57,6 +72,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2
         assertEquals(returnedTweet.getMessage(), tweet.getMessage());
     }
 
+    /**
+     * Test get tweets.
+     */
     public void testGetTweets()
     {
         TweetList tweets = new TweetList();
@@ -76,7 +94,10 @@ public class TweetListTest extends ActivityInstrumentationTestCase2
 
     }
 
-    //simplescreenrecorder
+    /**
+     * Test get count.
+     */
+//simplescreenrecorder
     public void testGetCount()
     {
         TweetList tweets = new TweetList();
